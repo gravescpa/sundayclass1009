@@ -1,13 +1,16 @@
-Now it's time for some math, <%= name %>. Your three favorite numbers are <%= favnum1 %>, <%= favnum2 %> and <%= favnum3 %>.<br>
-If we add them together we get <%= sum %><br>
-Now give me another number to break up into the lowest amount of coins.
+<center><p>Now it's time for some math, <%=name%>.<br> 
+Your three favorite numbers are <%=favnum1%>, <%=favnum2%> and <%=favnum3%>.<br>
+If we add them together we get <%=sum%><br></p></center>
+
+<img class="sizeimage" align="middle" src="/img/change.jpg">
+    </img><br>
+
+<center>
+<p>Now give me another number to break up into the lowest amount of coins.</p>
 
 <form method = "post" action = "/change">
-
 	<input type = "number"  name = "jingle">
-
-	<input type = "hidden" name = "input_name" value = <%= name %>>
-
+	<input type = "hidden" name = "input_name" value = <%=name%>>
 	<input type = "submit">
-
 </form>
+</center>
